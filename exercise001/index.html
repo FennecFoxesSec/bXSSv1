@@ -18,7 +18,7 @@
             let result = "";
             arguments.forEach(element => {
                 if (element.split("=")[0] == name){
-                    result = decodeURIComponent(element.split("=")[1]).replace("+", " ");
+                    result = decodeURIComponent(element.split("=")[1].replace("+", " "));
                 }
             })
             return result;
